@@ -1,0 +1,2 @@
+pytessaract
+PIL
