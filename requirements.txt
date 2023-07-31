@@ -1,2 +1,5 @@
-pytessaract
-PIL
+pytessaract 0.3.10
+PIL 9.5.0
+Tessaract OCR link
+https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.1.20230401.exe
+python 3.11.3
