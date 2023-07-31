@@ -10,18 +10,50 @@ image = Image.open(image_path)
 text = pytesseract.image_to_string(image)
 # Split the extracted text into individual words
 words = text.lower().split()
-
-if "math" in words and "master" in words:
+ 
+ #for math subject
+if "math" in words and "master" in words: 
     print("eligible for bachleor teaching")
+
+if "math" in words and "bachelor" in words: 
+    print("eligible for +2 teaching")
+
+
+#nepali
 if "Nepali" in words and "bachleor" in words:
     print("eligible for 11 12 teaching")
-if "social" in words and "+2" in words:
-    print("eligible for school teching")
-if "Science" in words and "master" in words:
-    print("eligible for bachleor teaching")
-if "Computer" in words and "bachleor" in words:
+if "Nepali" in words and "master" in words:
+    print("eligible for Bachelor teaching")
+
+#for social
+if "social" in words and "master" in words:
+    print("eligible for bachelor teching")
+if "social" in words and "bachleor" in words:
     print("eligible for 11 12 teaching")
-if "Health & Population" in words and "+2" in words:
-    print("eligible for school teching")
+
+#for Science 
+if "Science" in words and "master" in words:
+    print("eligible for Bachelor teching")
+if "Science" in words and "bachleor" in words:
+    print("eligible for 11 12 teaching")
+
+#for computer
+if "computer" in words and "master" in words:
+    print("eligible for Bacheloer teching")
+if "computer" in words and "bachleor" in words:
+    print("eligible for 11 12 teaching")
+ 
+#for HPE
+if "Health & population" in words and "master" in words:
+    print("eligible for Bacheloer teching")
+if "Health & population" in words and "bachleor" in words:
+    print("eligible for 11 12 teaching")
+
+#for Account
+if "Business Studies" in words and "master" in words:
+    print("eligible for Bacheloer teching")
+if "Health & population" in words and "bachleor" in words:
+    print("eligible for 11 12 teaching")
+
 else:
     print("not eligible")
